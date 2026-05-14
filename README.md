@@ -6,7 +6,7 @@ A personal website that serves as an online resume and link tracker, with an int
 
 ## Live Site
 
-[your-site-name.netlify.app](https://your-site-name.netlify.app)
+[Michael Barnes About Me](https://barnes0003.netlify.app/)
 
 ---
 
@@ -54,7 +54,7 @@ my-about-me-app/
 
 1. Clone the repo
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+   git clone https://github.com/barnes0003/my-about-me-app.git
    cd my-about-me-app
    ```
 
