@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Media Server — Your Name</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/jellyfin.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+
+  <!-- NAV BACK -->
+  <nav class="topnav">
+    <a href="index.html" class="topnav-back">← Back to About Me</a>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero hero--jellyfin">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Personal Media Server</p>
+      <h1 class="hero-name" id="server-name">My Jellyfin Server</h1>
+      <p class="hero-tagline">Movies · TV · Music · More</p>
+      <a id="launch-btn" href="#" target="_blank" rel="noopener" class="btn btn--jf">
+        Launch Jellyfin ↗
+      </a>
+    </div>
+    <div class="hero-shape"></div>
+  </header>
+
+  <main>
+
+    <!-- LIBRARY STATS -->
+    <section class="section" id="libraries">
+      <div class="container two-col">
+        <div class="section-label">Library</div>
+        <div class="section-body">
+          <h2>What's on the server</h2>
+          <div class="stat-grid" id="stat-grid">
+            <!-- filled by JS -->
+            <div class="stat-card stat-card--loading">Loading…</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENTLY ADDED -->
+    <section class="section section--alt" id="recent">
+      <div class="container">
+        <div class="two-col" style="margin-bottom:1.75rem">
+          <div class="section-label">Recent</div>
+          <div class="section-body">
+            <h2>Recently added</h2>
+            <p id="generated-at" class="meta-note"></p>
+          </div>
+        </div>
+        <div class="media-grid" id="media-grid">
+          <!-- filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVATE NOTE -->
+    <section class="section" id="access-note">
+      <div class="container two-col">
+        <div class="section-label">Access</div>
+        <div class="section-body">
+          <h2>This is a private server</h2>
+          <p>
+            My Jellyfin server is hosted at home and accessed securely over
+            <a href="https://tailscale.com" target="_blank" rel="noopener">Tailscale</a>.
+            It's not open to the public — the launch button above is for my own use.
+          </p>
+          <p>
+            Interested in self-hosting your own media server?
+            Check out <a href="https://jellyfin.org" target="_blank" rel="noopener">jellyfin.org</a>
+            — it's free and open source.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Powered by <a href="https://jellyfin.org" target="_blank" rel="noopener">Jellyfin</a> · Tunneled via <a href="https://tailscale.com" target="_blank" rel="noopener">Tailscale</a></p>
+    <p>© <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script src="js/jellyfin.js"></script>
+</body>
+</html>

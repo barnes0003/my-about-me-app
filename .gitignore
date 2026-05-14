@@ -1,0 +1,16 @@
+# Python virtual environment — never commit this to Git
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code workspace settings (optional — remove the next two lines if you want to share them)
+.vscode/
+*.code-workspace
+
+# Other scripts
+fetch_jellyfin.py

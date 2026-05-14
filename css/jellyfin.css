@@ -1,0 +1,145 @@
+/* =============================================
+   jellyfin.css  — styles for jellyfin.html
+   (shared style.css is also loaded on this page)
+   ============================================= */
+
+/* ── Top nav ── */
+.topnav {
+  background: var(--ink);
+  padding: 0.7rem 1.25rem;
+}
+.topnav-back {
+  color: #c8c0b8;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+.topnav-back:hover { color: #fff; text-decoration: none; }
+
+/* ── Jellyfin hero accent ── */
+.hero--jellyfin { background: #0d1117; }
+.hero--jellyfin .hero-shape {
+  background: radial-gradient(circle, #00a4dc55 0%, transparent 70%);
+}
+
+.btn--jf { background: #00a4dc; }
+.btn--jf:hover { background: #0088bb; }
+
+/* ── Library stat grid ── */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.stat-card {
+  padding: 1.1rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  text-align: center;
+  transition: border-color var(--transition), transform var(--transition);
+}
+.stat-card:hover {
+  border-color: #00a4dc;
+  transform: translateY(-3px);
+}
+
+.stat-card--loading {
+  color: var(--ink-light);
+  font-size: 0.875rem;
+  grid-column: 1 / -1;
+}
+
+.stat-count {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  line-height: 1;
+  color: #00a4dc;
+  margin-bottom: 0.3rem;
+}
+.stat-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+}
+
+/* ── Media grid ── */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.media-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  transition: transform var(--transition), box-shadow var(--transition);
+  cursor: default;
+}
+.media-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px #0000001a;
+}
+
+.media-poster {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  background: #1e2533;
+  display: block;
+}
+.media-poster-placeholder {
+  width: 100%;
+  aspect-ratio: 2/3;
+  background: linear-gradient(135deg, #1e2533 0%, #0d1117 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.media-info {
+  padding: 0.6rem 0.7rem 0.75rem;
+}
+.media-title {
+  font-size: 0.825rem;
+  font-weight: 500;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.media-meta {
+  font-size: 0.75rem;
+  color: var(--ink-light);
+  margin-top: 0.15rem;
+}
+
+/* ── Misc ── */
+.meta-note {
+  font-size: 0.8rem;
+  color: var(--ink-light);
+  margin-top: 0 !important;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  padding: 2rem;
+  text-align: center;
+  color: var(--ink-light);
+  font-size: 0.9rem;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+}
+
+@media (max-width: 480px) {
+  .media-grid  { grid-template-columns: repeat(3, 1fr); }
+  .stat-grid   { grid-template-columns: repeat(2, 1fr); }
+}

@@ -1,0 +1,11 @@
+# netlify.toml — Netlify configuration
+# No build step needed for a static site — Netlify just serves the files.
+
+[build]
+  publish = "."   # serve from the root folder
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"

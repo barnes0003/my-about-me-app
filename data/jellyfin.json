@@ -1,0 +1,193 @@
+{
+  "generated_at": "2026-05-13T21:35:11.267570+00:00",
+  "server_name": "qsjellyfin",
+  "server_url": "http://192.168.1.169:8096",
+  "libraries": [
+    {
+      "name": "Collections",
+      "type": "boxsets",
+      "count": 18
+    },
+    {
+      "name": "Home Videos and Photos",
+      "type": "homevideos",
+      "count": 13
+    },
+    {
+      "name": "Movies",
+      "type": "movies",
+      "count": 302
+    },
+    {
+      "name": "Shows",
+      "type": "tvshows",
+      "count": 64
+    }
+  ],
+  "recent": [
+    {
+      "id": "4621b6d23cf1e7f49396c6f621301955",
+      "name": "Dirk Gently's Holistic Detective Agency",
+      "type": "Series",
+      "year": 2016,
+      "overview": "A comedic thriller that follows the bizarre adventures of eccentric “holistic” detective Dirk Gently and his reluctant assistant Todd. An adaptation of Douglas Adams’ wildly successful comic novels.",
+      "genres": [
+        "Comedy",
+        "Sci-Fi & Fantasy",
+        "Crime"
+      ],
+      "runtime_min": 42,
+      "image_url": "http://192.168.1.169:8096/Items/4621b6d23cf1e7f49396c6f621301955/Images/Primary?maxHeight=300&quality=90&tag=3e235a40909f4b1606c14bf7e7c582bb"
+    },
+    {
+      "id": "6cda72201f9d5e94c8d5d1e6afa50481",
+      "name": "Project Hail Mary",
+      "type": "Movie",
+      "year": 2026,
+      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the rid",
+      "genres": [
+        "Science Fiction",
+        "Adventure"
+      ],
+      "runtime_min": 156,
+      "image_url": "http://192.168.1.169:8096/Items/6cda72201f9d5e94c8d5d1e6afa50481/Images/Primary?maxHeight=300&quality=90&tag=61ae7b9c6cc194dffbd2b8d007cead3b"
+    },
+    {
+      "id": "9686cd65eb7047e4c52392d391c23b41",
+      "name": "The Super Mario Galaxy Movie",
+      "type": "Movie",
+      "year": 2026,
+      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family le",
+      "genres": [
+        "Family",
+        "Comedy",
+        "Adventure"
+      ],
+      "runtime_min": 98,
+      "image_url": "http://192.168.1.169:8096/Items/9686cd65eb7047e4c52392d391c23b41/Images/Primary?maxHeight=300&quality=90&tag=c9bbcf0652920fec45b956c1d1069f40"
+    },
+    {
+      "id": "6cddd33f52c25dbab784ef4f804a432d",
+      "name": "Mrs. Harris Goes to Paris",
+      "type": "Movie",
+      "year": 2022,
+      "overview": "A 1950s London cleaning lady falls in love with an haute couture dress by Christian Dior and decides to gamble everything for the sake of this folly.",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "History"
+      ],
+      "runtime_min": 116,
+      "image_url": "http://192.168.1.169:8096/Items/6cddd33f52c25dbab784ef4f804a432d/Images/Primary?maxHeight=300&quality=90&tag=bccc64674fbe8afa519cc69d12f9cfa7"
+    },
+    {
+      "id": "8cb30354561497f04c048470a3968dc0",
+      "name": "Veronica Mars",
+      "type": "Movie",
+      "year": 2014,
+      "overview": "Years after walking away from her past as a teenage private eye, Veronica Mars gets pulled back to her hometown - just in time for her high school reunion - in order to help her old flame Logan Echoll",
+      "genres": [
+        "Comedy",
+        "Crime",
+        "Drama"
+      ],
+      "runtime_min": 85,
+      "image_url": "http://192.168.1.169:8096/Items/8cb30354561497f04c048470a3968dc0/Images/Primary?maxHeight=300&quality=90&tag=8c4c9c5e6fc151f0bc6ed9a3dfe0e7ed"
+    },
+    {
+      "id": "c2dfaa17d60273dcf311f77040aa450d",
+      "name": "Umbilical World",
+      "type": "Movie",
+      "year": 2018,
+      "overview": "Best known as the cult creator of the animated web series Salad Fingers (SUFF 2007) David Firth creates morbidly fascinating worlds that delve deep into the darkest recesses of the human psyche. It’s ",
+      "genres": [
+        "Animation"
+      ],
+      "runtime_min": 79,
+      "image_url": "http://192.168.1.169:8096/Items/c2dfaa17d60273dcf311f77040aa450d/Images/Primary?maxHeight=300&quality=90&tag=137b644758155650bd4854f6f5cc38ec"
+    },
+    {
+      "id": "6866d31c71c6616ce8dbb8225f096694",
+      "name": "ONE PIECE",
+      "type": "Series",
+      "year": 2023,
+      "overview": "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.",
+      "genres": [
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ],
+      "runtime_min": 0,
+      "image_url": "http://192.168.1.169:8096/Items/6866d31c71c6616ce8dbb8225f096694/Images/Primary?maxHeight=300&quality=90&tag=92a664a31066cb180c3db1bd17bd10d1"
+    },
+    {
+      "id": "166c5a2dd68c6df6b2aae2cfb76514e2",
+      "name": "Good Luck, Have Fun, Don't Die",
+      "type": "Movie",
+      "year": 2026,
+      "overview": "A 'Man from the Future' arrives at an LA diner where he must recruit the precise combination of disgruntled patrons to join him on a one-night quest to save the world from the terminal threat of a rog",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Science Fiction"
+      ],
+      "runtime_min": 134,
+      "image_url": "http://192.168.1.169:8096/Items/166c5a2dd68c6df6b2aae2cfb76514e2/Images/Primary?maxHeight=300&quality=90&tag=16cb75027ead8e67cb9eedd629361b96"
+    },
+    {
+      "id": "6fb4788c6eeb35744a120ecd2bc1af0e",
+      "name": "Free Guy",
+      "type": "Movie",
+      "year": 2021,
+      "overview": "A bank teller discovers he is actually a background player in an open-world video game, and decides to become the hero of his own story. Now, in a world where there are no limits, he is determined to ",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Science Fiction"
+      ],
+      "runtime_min": 115,
+      "image_url": "http://192.168.1.169:8096/Items/6fb4788c6eeb35744a120ecd2bc1af0e/Images/Primary?maxHeight=300&quality=90&tag=437d78ff95207f81d2b45b8d94cc6e87"
+    },
+    {
+      "id": "e6add2ceab7e81417d316d404e1fa1d5",
+      "name": "Pastacolypse",
+      "type": "Movie",
+      "year": 2023,
+      "overview": "A billionaire celebrity chef seeks revenge on all mankind when a global ban on gluten destroys his life. In the process, Alfredo Manicotti is disfigured into a hideous creature, half-man, half-macaron",
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Horror"
+      ],
+      "runtime_min": 71,
+      "image_url": "http://192.168.1.169:8096/Items/e6add2ceab7e81417d316d404e1fa1d5/Images/Primary?maxHeight=300&quality=90&tag=36d9473670a02cb84052c7a9c16c65e9"
+    },
+    {
+      "id": "660d7fd241450a49efe3648c796e1310",
+      "name": "Kung Fury",
+      "type": "Movie",
+      "year": 2015,
+      "overview": "During an unfortunate series of events, a friend of Kung Fury is assassinated by the most dangerous kung fu master criminal of all time, Adolf Hitler, a.k.a Kung Führer.  Kung Fury decides to travel b",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Fantasy"
+      ],
+      "runtime_min": 32,
+      "image_url": "http://192.168.1.169:8096/Items/660d7fd241450a49efe3648c796e1310/Images/Primary?maxHeight=300&quality=90&tag=d106cba13f33347f48e299d2968bfeff"
+    },
+    {
+      "id": "43b16adf449f7fd797277856bb71a1de",
+      "name": "Transformers: Five Faces of Darkness",
+      "type": "Movie",
+      "year": 1986,
+      "overview": "Following the events in Transformers: The Movie, the Decepticons have fled and the Autobots are victorious under the command of a new leader, Rodimus Prime. In the midst of the celebrations, the Autob",
+      "genres": [
+        "Adventure",
+        "Animation",
+        "Family"
+      ],
+      "runtime_min": 105,
+      "image_url": "http://192.168.1.169:8096/Items/43b16adf449f7fd797277856bb71a1de/Images/Primary?maxHeight=300&quality=90&tag=42f6bafdf19988ace4bd124ce3416e73"
+    }
+  ]
+}

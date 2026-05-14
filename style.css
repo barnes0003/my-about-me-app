@@ -1,0 +1,374 @@
+/* =============================================
+   CSS VARIABLES — edit these to retheme the site
+   ============================================= */
+:root {
+  --bg:        #F9F6F1;
+  --bg-alt:    #FFFFFF;
+  --ink:       #1A1714;
+  --ink-light: #6B6560;
+  --accent:    #C8522A;
+  --accent-2:  #E8D5C4;
+  --border:    #E2DDD7;
+  --radius:    6px;
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+  --max-w:     860px;
+  --transition: 0.25s ease;
+}
+
+/* =============================================
+   RESET & BASE
+   ============================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+p + p { margin-top: 0.85em; }
+
+strong { font-weight: 500; }
+
+/* =============================================
+   LAYOUT HELPERS
+   ============================================= */
+.container {
+  width: min(var(--max-w), 100% - 2.5rem);
+  margin-inline: auto;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.center { text-align: center; }
+
+@media (max-width: 600px) {
+  .two-col { grid-template-columns: 1fr; gap: 0.5rem; }
+}
+
+/* =============================================
+   BUTTON
+   ============================================= */
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.65rem 1.6rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  transition: background var(--transition), transform var(--transition);
+}
+.btn:hover {
+  background: #a8401e;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* =============================================
+   HERO
+   ============================================= */
+.hero {
+  position: relative;
+  padding: 6rem 1.25rem 5rem;
+  overflow: hidden;
+  background: var(--ink);
+  color: #fff;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  width: min(var(--max-w), 100% - 2.5rem);
+  margin-inline: auto;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-photo-wrap {
+  flex-shrink: 0;
+  opacity: 0;
+  animation: fadeUp 0.6s 0.65s forwards;
+}
+
+.hero-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+  box-shadow: 0 8px 32px #00000044;
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.hero-eyebrow {
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  margin-bottom: 0.4rem;
+  opacity: 0;
+  animation: fadeUp 0.6s 0.1s forwards;
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: 1.05;
+  color: #fff;
+  opacity: 0;
+  animation: fadeUp 0.6s 0.25s forwards;
+}
+
+.hero-tagline {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #c8c0b8;
+  opacity: 0;
+  animation: fadeUp 0.6s 0.4s forwards;
+}
+
+.hero .btn {
+  opacity: 0;
+  animation: fadeUp 0.6s 0.55s forwards;
+}
+
+/* Decorative blob */
+.hero-shape {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #c8522a44 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* =============================================
+   SECTIONS
+   ============================================= */
+.section { padding: 4.5rem 1.25rem; }
+.section--alt { background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+.section-label {
+  padding-top: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.section-body h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  line-height: 1.2;
+  margin-bottom: 1.1rem;
+}
+
+.section-body p {
+  color: var(--ink-light);
+  max-width: 58ch;
+}
+
+/* =============================================
+   SKILLS TAG LIST
+   ============================================= */
+.tag-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.tag-list li {
+  padding: 0.35rem 0.9rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 0.875rem;
+  color: var(--ink);
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.tag-list li:hover {
+  border-color: var(--accent);
+  background: #fff3ee;
+}
+
+/* =============================================
+   TIMELINE
+   ============================================= */
+.timeline { margin-top: 0.5rem; }
+
+.timeline-item {
+  padding: 1.25rem 0 1.25rem 1rem;
+  border-left: 2px solid var(--border);
+  position: relative;
+  transition: border-color var(--transition);
+}
+
+.timeline-item + .timeline-item { margin-top: 0.25rem; }
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 1.5rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.timeline-item:hover { border-color: var(--accent); }
+
+.timeline-date {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.timeline-item h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  margin: 0.2rem 0 0.1rem;
+}
+
+.timeline-company {
+  font-size: 0.875rem;
+  color: var(--ink-light);
+  margin-bottom: 0.4rem !important;
+}
+
+.timeline-item p {
+  font-size: 0.925rem;
+}
+
+/* =============================================
+   LINK LIST
+   ============================================= */
+.link-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.link-list a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--ink);
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.link-list a:hover {
+  border-color: var(--accent);
+  transform: translateX(4px);
+  box-shadow: 0 4px 16px #0000000d;
+  text-decoration: none;
+}
+
+.link-icon {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--accent-2);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.link-text { display: flex; flex-direction: column; gap: 0.1rem; }
+.link-text strong { font-weight: 500; line-height: 1.2; }
+.link-text em { font-style: normal; font-size: 0.8rem; color: var(--ink-light); }
+
+/* =============================================
+   CONTACT SECTION
+   ============================================= */
+#contact h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 0.5rem;
+}
+#contact p { color: var(--ink-light); }
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.footer {
+  padding: 2rem 1.25rem;
+  text-align: center;
+  font-size: 0.825rem;
+  color: var(--ink-light);
+  border-top: 1px solid var(--border);
+}
+.footer p + p { margin-top: 0.25rem; }
+
+/* =============================================
+   ANIMATIONS
+   ============================================= */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}

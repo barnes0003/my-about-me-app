@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name — About Me</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Hello, I'm</p>
+          <h1 class="hero-name">Michael Barnes</h1>
+          <p class="hero-tagline">Human Being (Person) &amp; Lifelong Learner</p>
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+        <div class="hero-photo-wrap">
+          <img src="images/profile.jpg" alt="Michael Barnes" class="hero-photo" />
+        </div>
+      </div>
+    </div>
+    <div class="hero-shape"></div>
+  </header>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div class="section-label">About</div>
+        <div class="section-body">
+          <h2>A little about me</h2>
+          <p>
+            Hi! I'm a developer based in <strong>North Carolina</strong>. I love building things for the web,
+            solving interesting problems, and continually learning new skills. This page is my little corner
+            of the internet — feel free to look around.
+          </p>
+          <p>
+            When I'm not coding you'll find me <em>hiking, reading, or tinkering with side projects</em>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="container two-col">
+        <div class="section-label">Skills</div>
+        <div class="section-body">
+          <h2>What I work with</h2>
+          <ul class="tag-list">
+            <li>HTML &amp; CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Git &amp; GitHub</li>
+            <li>VS Code</li>
+            <li>Netlify</li>
+            <!-- Add more as you learn them -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container two-col">
+        <div class="section-label">Experience</div>
+        <div class="section-body">
+          <h2>Where I've been</h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-date">2024 – Present</span>
+              <h3>Job Title</h3>
+              <p class="timeline-company">Company Name</p>
+              <p>Brief description of what you did or do here. Keep it punchy — two sentences max.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">2021 – 2024</span>
+              <h3>Previous Job Title</h3>
+              <p class="timeline-company">Previous Company</p>
+              <p>Another brief description of your responsibilities and accomplishments.</p>
+            </div>
+            <!-- Copy a timeline-item block to add more -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINKS -->
+    <section class="section section--alt" id="links">
+      <div class="container two-col">
+        <div class="section-label">Links</div>
+        <div class="section-body">
+          <h2>Find me around the web</h2>
+          <ul class="link-list">
+            <li>
+              <a href="https://github.com/barnes0003" target="_blank" rel="noopener">
+                <span class="link-icon">⌥</span>
+                <span class="link-text">
+                  <strong>GitHub</strong>
+                  <em>github.com/barnes0003</em>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">
+                <span class="link-icon">in</span>
+                <span class="link-text">
+                  <strong>LinkedIn</strong>
+                  <em>linkedin.com/in/RickRoll</em>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:michaelbarnes0@gmail.com">
+                <span class="link-icon">@</span>
+                <span class="link-text">
+                  <strong>Email</strong>
+                  <em>michaelbarnes0@gmail.com</em>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="jellyfin.html">
+                <span class="link-icon">🎬</span>
+                <span class="link-text">
+                  <strong>Media Server</strong>
+                  <em>My home Jellyfin library</em>
+                </span>
+              </a>
+            </li>
+            <!-- Copy a <li> block to add more links -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container center">
+        <h2>Let's connect</h2>
+        <p>Have a question or just want to say hi? My inbox is always open.</p>
+        <a href="mailto:michaelbarnes0@gmail.com" class="btn">Say Hello →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Built with HTML, CSS &amp; JavaScript · Deployed on Netlify</p>
+    <p>© <span id="year"></span>Michael Barnes</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
